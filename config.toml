@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://prosfoundation.org/"
+baseurl = "http://pros.runkel.org/"
 languageCode = "en-us"
 title = "PROS Foundation"
 #theme = "hugo-agency-theme"
@@ -32,7 +32,7 @@ googleAnalytics = ""
   # 404 error customization
   [params.error404]
     heading = "Page couldn't be found"
-    text = "Please visit [this page](/)"
+    text = "Please visit [our home page](/)"
 
   # Optional piwik tracking
   #[params.analytics.piwik]

@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://prosfoundation.org/categories/</loc>
+    <loc>http://pros.runkel.org/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://prosfoundation.org/</loc>
+    <loc>http://pros.runkel.org/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://prosfoundation.org/tags/</loc>
+    <loc>http://pros.runkel.org/tags/</loc>
     <priority>0</priority>
   </url>
   
