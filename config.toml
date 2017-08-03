@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://pros.runkel.org/"
+baseurl = ""
 languageCode = "en-us"
 title = "PROS Foundation"
 #theme = "hugo-agency-theme"
