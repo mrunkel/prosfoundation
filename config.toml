@@ -213,7 +213,7 @@ She worked at Pied Piper for years until they went belly up."""
   [params.contact]
     enable = true
     title = "Contact us"
-    subtitle  = "Lorem ipsum dolor sit amet consectetur."
+    subtitle  = "We'd love to hear from you!"
     buttonText = "Send message"
 
     # Since this template is static, the contact form uses www.formspree.io as a
