@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://pros.runkel.org/"
+#baseurl = "http://cbe420ed.ngrok.io1"
 languageCode = "en-us"
 title = "PROS Foundation"
 #theme = "hugo-agency-theme"
@@ -78,6 +78,7 @@ googleAnalytics = ""
     title = "PROS Foundation"
     subtitle = "Pathways for Rare and Orphan Studies"
     buttonText = "Tell me more"
+    buttonTarget = "#research"
 
 
   # Services section
@@ -162,15 +163,20 @@ googleAnalytics = ""
   [params.team]
     enable = true
     # Possibility to center items
-    #center = true
-    title = "Board of Directors"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    center = true
+    title = "Our Mission and inspiration"
+    subtitle = """As a 501&#40;c&#41;&#40;3&#41; non-profit corporation, our mission is to help prepare patient advocacy groups
+    for clinical trials. We are committed to connecting with rare disease focused patient advocacy groups to guide them towards readiness for natural history studies or the clinical trial phase.
+    It's our heart's passion to help these groups achieve their vision."""
     description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
 
     # All team member's pictures are stored under 'static/img/team'.
     # Replace them with your own too.
     # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
-    [[params.team.members]]
+    [params.team.board]
+      title = "Board of Directors"
+
+    [[params.team.board.members]]
       img = "emorgan.jpg"
       name = "Ellen Morgan"
       position = "Chairman"
@@ -181,7 +187,7 @@ She worked at Pied Piper for years until they went belly up."""
         ["fa-linkedin", "https://www.linkedin.com/in/ellen-morgan-b273534/"]
       ]
 
-    [[params.team.members]]
+    [[params.team.board.members]]
       img = "kclark.jpg"
       name = "Kristi Clark"
       position = "Director"
@@ -189,6 +195,51 @@ She worked at Pied Piper for years until they went belly up."""
         ["fa-linkedin", "https://www.linkedin.com/in/kristi-clark-b200a11/"]
       ]
       bio = "Kristi rocks a scarf like a European."
+
+    [params.team.exec]
+      title = "PROS Team"
+    [[params.team.exec.members]]
+      img = "emorgan.jpg"
+      name = "Ellen Morgan"
+      position = "Chairman"
+      # For bio markdown and even multiline strings are available.
+      bio = """Ellen is awesome with heaps of experience in the field of sciency stuff.
+She worked at Pied Piper for years until they went belly up."""
+      social = [
+        ["fa-linkedin", "https://www.linkedin.com/in/ellen-morgan-b273534/"]
+      ]
+
+    [[params.team.exec.members]]
+      img = "kclark.jpg"
+      name = "Kristi Clark"
+      position = "Director"
+      social = [
+        ["fa-linkedin", "https://www.linkedin.com/in/kristi-clark-b200a11/"]
+      ]
+      bio = "Kristi rocks a scarf like a European."
+
+    [params.team.medical]
+      title = "Scientific and Medical Advisory Board"
+    [[params.team.medical.members]]
+      img = "emorgan.jpg"
+      name = "Ellen Morgan"
+      position = "Chairman"
+      # For bio markdown and even multiline strings are available.
+      bio = """Ellen is awesome with heaps of experience in the field of sciency stuff.
+She worked at Pied Piper for years until they went belly up."""
+      social = [
+        ["fa-linkedin", "https://www.linkedin.com/in/ellen-morgan-b273534/"]
+      ]
+
+    [[params.team.medical.members]]
+      img = "kclark.jpg"
+      name = "Kristi Clark"
+      position = "Director"
+      social = [
+        ["fa-linkedin", "https://www.linkedin.com/in/kristi-clark-b200a11/"]
+      ]
+      bio = "Kristi rocks a scarf like a European."
+
 
   # Client section
     [params.clients_list]
@@ -213,7 +264,7 @@ She worked at Pied Piper for years until they went belly up."""
   [params.contact]
     enable = true
     title = "Contact us"
-    subtitle  = "Lorem ipsum dolor sit amet consectetur."
+    subtitle  = "We'd love to hear from you!"
     buttonText = "Send message"
 
     # Since this template is static, the contact form uses www.formspree.io as a
