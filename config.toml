@@ -1,5 +1,5 @@
 # Site settings
-#baseurl = "http://cbe420ed.ngrok.io1"
+baseurl = "/"
 languageCode = "en-us"
 title = "PROS Foundation"
 #theme = "hugo-agency-theme"
