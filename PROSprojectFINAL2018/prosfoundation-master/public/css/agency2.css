@@ -1,0 +1,196 @@
+/*WhoWeAre*/
+  .carousel-inner img {
+    float: left;
+    width: 17.5%;
+    height: auto;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+
+
+  .medboardcontain {
+    width: 100%;
+    margin: 0% 20%;
+  }
+
+  .missionstatement, .foundermessage {
+    margin-top: 5%;
+  }
+
+  .missionstatement p  {
+    text-align: center;
+    font-size: 22px;
+    margin-left: 22.5%;
+    margin-right: 22.5%;
+  }
+
+  .foundermessage p {
+    text-align: center;
+    font-size: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /*background-color: rgba(0,0,0,0.7);*/
+    overflow-x: hidden;
+    transition: 0s;
+    /*padding-top: 25%;*/
+    padding-bottom: 30%;
+    margin-top: 4%;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0%;
+    left: -20%;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#hambtn {
+    size: 30px;
+}
+
+#main {
+    transition: margin-left 0.1s;
+    padding-left: 0;
+}
+
+  .carbtngroup {
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 0%;
+    position: absolute;
+    float: left;
+    z-index: 1;
+    top: 10%;
+    left: 0;
+    padding: 0 5% 0% 5%;
+}
+
+.carbtngroup button {
+  width: 100%;
+  margin: 0% 15% 10% 5%;
+  font-family: Arial,sans-serif;
+  border-radius: 5px;
+}
+
+figcaption {
+  display: block;
+}
+
+
+/*WhatWeDo*/
+ul.whatwedolist {
+  list-style-type: none;
+  font-size: 22px;
+  padding: 0%;
+}
+
+ul.whatwedolist li {
+  margin: 2.5% 0;
+}
+
+/*CONTACT*/
+fieldset {
+  margin-top: -5%;
+}
+
+.address p {
+  color: white;
+  font-size: 30px;
+  z-index: 10;
+}
+
+.quicklinks {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin-right: 5%;
+  margin-bottom: 10px;
+}
+
+.quicklinks img {
+  width: 75%;
+  height: auto;
+}
+
+/*COLLAB*/
+body {
+  padding-right:0px !important;
+  margin-right:0px !important;
+}
+
+.modal-open {
+  overflow-y: visible;
+}
+
+.modal {
+  margin-top: 10%;
+}
+
+#logocontain {
+  margin-bottom: 2.5%;
+}
+
+#logocontain.container img {
+  width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*TOPNAV*/
+.navbar {
+  /*background-color: rgb(0,0,0)*/
+  /*background-color:rgba(0,8,136,0.5);*/
+  background-color: white;
+  padding: 0.75% 0%;
+}
+
+#click1, #click2, #click3, #click4, #click5 {
+  color: black;
+}
+
+/*FOOTER*/
+.footerclass {
+  bottom: 0;
+  background-color: rgba(248,248,248,0.6);
+  width: 100%; 
+  height: 15%;
+}
+
+#footerlogo1 {
+  margin-top: 10%;
+}
+
+#footerlogo2 {
+  margin-top: -10%;
+  margin-left: 2.5%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
