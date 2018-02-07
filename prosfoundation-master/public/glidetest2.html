@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/glide.core.css">
+        <link rel="stylesheet" href="css/glide.theme.css"> 
+    </head>
+
+    <body>
+        <div id="Glide" class="glide">
+
+            <div class="glide__arrows">
+                <button class="glide__arrow prev" data-glide-dir="<">prev</button>
+                <button class="glide__arrow next" data-glide-dir=">">next</button>
+            </div>
+        
+            <div class="glide__wrapper">
+                <ul class="glide__track">
+                    <li class="glide__slide">Hello</li>
+                    <li class="glide__slide">Hi</li>
+                    <li class="glide__slide">Good Day</li>
+                </ul>
+            </div>
+        
+            <div class="glide__bullets"></div>
+        
+        </div>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="js/jquery.glide.js"></script>
+
+        <script>
+            $("#Glide").glide({
+                type: "carousel"
+            });
+        </script>
+
+    </body>
+</html>

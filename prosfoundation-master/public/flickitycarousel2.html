@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+    <style>
+      * { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+  width: 75%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-cell {
+  width: 125%;
+  height: auto;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+    </style>
+  </head>
+  
+  <body>
+    <h1>Flickity - autoPlay</h1>
+
+<!-- Flickity HTML init -->
+<div class="carousel" data-flickity='{ "wrapAround":true }'>
+    <div class="carousel-cell"><img src="https://tripmasters-pictures.s3.amazonaws.com/images/asst/972/london_-_palace_of_westminster_and_big_ben-661988-200.jpg"></div>
+    <div class="carousel-cell"><img src="https://www.flightcentre.com.au/sites/default/files/styles/product-200x200-optimized/global/product-images/Big_Ben_London_iStock_000005872948-c9dbc64acb0c4c33776bd62698d52672.jpg?itok=EPz8hQ_M"></div>
+    <div class="carousel-cell"><img src="https://www.the-ascott.com/media/images/properties/united-kingdom/london/the-cavendish-london/overview/the-cavendish-london---view_42_200x200.jpg"></div>
+</div>
+
+
+
+  </body>
+</html>

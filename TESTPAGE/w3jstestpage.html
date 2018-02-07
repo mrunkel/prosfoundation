@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<style>
+      body
+{
+	padding: 50px;
+}
+
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	position: relative;
+	padding: 10px 40px;
+  margin: 40px 10px 10px 0px;
+  float: left;
+	font-family: 'Pacifico', cursive;
+	font-size: 15px;
+	color: #FFF;
+	text-decoration: none;
+	border-radius: 15px;
+}
+
+
+.red1
+{
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+	border-right: solid black;
+
+}
+
+.red2
+{
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+}
+
+
+
+.action-button:active
+{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+</style>
+<body>
+
+<button onclick="w3.toggleShow('.slideshow2')">Toggle/Show</button>
+
+<div class="slideshow2 w3-animate-opacity">
+        <p>The slideshow is an object, with methods like next/previous:</p>
+        
+        <img class="nature" src="https://www.frameweb.com/media/files/286009" width="300px" height="300px">
+        <img class="nature" src="https://media.azpm.org/master/image/2017/2/3/hero/ua-tech-park-hero.jpg" width="300px" height="300px">
+        <img class="nature" src="http://d1t8ul4wn7ajyn.cloudfront.net/media/original_images/blog-gaming-dark.jpg" width="300px" height="300px">
+        
+        
+        <p>
+        <button class="action-button shadow animate red1" onclick="myShow.previous()">Prev</button>
+        <button class="action-button shadow animate red2" style="margin-left: 50px"  onclick="myShow.next()">Next</button>
+        </p>
+        
+        <script>
+        myShow = w3.slideshow(".nature", 0);
+        </script>
+        </div>
+
+      
+
+</body>
+</html>
